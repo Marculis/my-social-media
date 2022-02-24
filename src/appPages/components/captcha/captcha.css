@@ -1,0 +1,24 @@
+.captchaImg {
+  width: 180px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.refreshImg {
+  position: relative;
+  bottom: 40px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+.refreshImg:hover {
+  width: 33px;
+  height: 33px;
+  transform: rotate(180deg);
+}
+@media screen and (200px <= width <= 450px) {
+  .captchaBlock {
+    text-align: center;
+  }
+}

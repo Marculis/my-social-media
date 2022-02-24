@@ -1,0 +1,37 @@
+.paginator {
+  text-align: center;
+}
+.paginator > span {
+  margin: 2px;
+  font-weight: 600;
+  color: rgb(245, 245, 245);
+  background: rgb(124, 157, 167);
+  padding: 1px 3px 2px 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 0.7em;
+}
+
+.paginator > span:hover {
+  background: rgba(124, 157, 167, 0.616);
+}
+.paginator > .prevNext:hover,
+.paginator > .activePage:hover,
+.paginator > .activePage {
+  background: none;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 700;
+  outline: 2px solid rgb(255, 221, 108);
+}
+.paginator > .prevNext {
+  outline: 2px solid rgb(0, 72, 94);
+  background: rgb(255, 255, 255);
+  color: black;
+  margin: 0 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}

@@ -1,0 +1,12 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.preloader img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(203, 219, 224, 0.26);
+}

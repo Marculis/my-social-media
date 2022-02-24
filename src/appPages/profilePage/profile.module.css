@@ -1,0 +1,40 @@
+.profileContainer {
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "a b";
+  grid-template-columns: 1.5fr 1fr;
+}
+.leftSide,
+.rightSide {
+  padding: 20px;
+}
+.leftSide {
+  grid-area: a;
+}
+.rightSide {
+  grid-area: b;
+}
+h1 {
+  grid-area: h1;
+}
+@media screen and (200px <= width <= 450px) {
+  .profileContainer {
+    grid-template-areas:
+      "h1"
+      "a"
+      "b";
+    grid-template-columns: 1fr;
+  }
+  .rightSide {
+    width: 380px;
+    border: 1px solid rgb(233, 230, 230);
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+    border-radius: 8px;
+    margin-left: 10px;
+  }
+  .leftSide,
+  .rightSide {
+    padding: 0px;
+  }
+}

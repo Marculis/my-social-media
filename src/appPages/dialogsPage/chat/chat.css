@@ -1,0 +1,107 @@
+.mainBlock {
+  width: 600px;
+  box-shadow: 5px 5px 5px rgb(199, 199, 199);
+  background: rgba(233, 233, 233, 0.274);
+  border-radius: 7px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+}
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+.conversation {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.speakerName {
+  margin-left: 5px;
+  color: rgb(169, 196, 204);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.speakerName:hover {
+  color: rgb(0, 0, 0);
+}
+.btnSend {
+  width: 150px;
+  margin-bottom: 8px;
+  background-color: rgb(233, 233, 233);
+  color: rgb(117, 150, 160);
+}
+
+.myMessage {
+  background-color: rgb(203, 219, 224);
+  border-radius: 10px 0 10px 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.myFriendMessage {
+  background-color: rgb(255, 221, 108);
+  border-radius: 0 10px 10px 10px;
+  display: inline-block;
+}
+.myMessage,
+.myFriendMessage {
+  width: fit-content;
+  max-width: 70%;
+  padding: 3px 5px 3px 8px;
+  margin-bottom: 8px;
+}
+.viewedMes,
+.unViewedMes {
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 5px;
+  width: fit-content;
+  padding: 2px 4px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 9px 0 9px 9px;
+  border: 3px solid rgb(203, 219, 224);
+  margin-left: auto;
+  margin-right: 0;
+}
+.viewedMes {
+  color: rgb(50, 146, 50);
+}
+.unViewedMes {
+  color: rgb(136, 43, 27);
+}
+.messageInfo {
+  display: inline;
+}
+.deleteImg {
+  display: inline;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  right: 30px;
+  opacity: 0.2;
+  cursor: pointer;
+}
+.deleteImg:hover {
+  opacity: 1;
+}
+.messageItem > .deleteImg {
+  position: relative;
+  left: 8px;
+}
+
+@media screen and (200px <= width <= 450px) {
+  .mainBlock {
+    width: 385px;
+    border: 1px solid rgb(233, 230, 230);
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+    padding: 5px;
+    margin-left: 0px;
+  }
+}

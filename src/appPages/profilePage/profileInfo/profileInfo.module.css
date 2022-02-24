@@ -1,0 +1,190 @@
+.profileInfoContainer {
+  display: grid;
+  grid-template-areas: "con img info";
+  grid-template-columns: 0.1fr 1.5fr 2fr;
+}
+.contacts {
+  grid-area: con;
+  position: relative;
+  left: -32px;
+}
+.profileImg {
+  position: relative;
+  grid-area: img;
+  left: -20px;
+  width: 230px;
+  box-shadow: 5px 5px 5px rgb(199, 199, 199);
+  height: 320px;
+  background: rgba(233, 233, 233, 0.274);
+  border-radius: 7px;
+}
+.profileImg img {
+  width: 210px;
+  height: 250px;
+  position: relative;
+  border-radius: 4px;
+  padding: 10px;
+}
+.profileImg > form > label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  background: rgb(224, 224, 224);
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.2s;
+  width: 35px;
+  height: 32px;
+  margin-left: 10px;
+}
+.editProfile > button {
+  position: relative;
+  top: -18px;
+  margin-left: 25px;
+  width: 150px;
+  height: 32px;
+  font-size: 1em;
+}
+.profileImg > form > label > img {
+  width: 24px;
+  height: 24px;
+  margin-left: -3px;
+}
+.profileImg > form > label:hover {
+  background: none;
+  outline: 2px solid rgb(255, 221, 108);
+  box-shadow: darkgoldenrod;
+}
+.profileImg > form > input {
+  display: none;
+}
+.profileInfo {
+  grid-area: info;
+  position: relative;
+  left: -20px;
+  background: rgba(233, 233, 233, 0.274);
+  box-shadow: 5px 5px 5px rgb(199, 199, 199);
+  border-radius: 4px;
+}
+.profileInfo > h4 {
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  color: rgb(85, 76, 67);
+  font-size: 1.5em;
+}
+.profileInfo > .status {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9em;
+  font-style: italic;
+  background: white;
+  width: 90%;
+  margin: 0 auto 30px auto;
+  border-radius: 4px;
+}
+.descriptionItem {
+  text-align: center;
+  margin: 7px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+.needJob {
+  color: rgb(35, 141, 26);
+}
+.works {
+  color: rgb(139, 14, 14);
+}
+.needJob,
+.works {
+  font-weight: 600;
+}
+.subscribe > button {
+  padding-top: 4px;
+  margin-left: 10px;
+  width: 100px;
+  border: 2px solid rgb(203, 219, 224);
+  background: none;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+.subscribe > button:hover {
+  border: 2px solid rgb(255, 221, 108);
+  background: white;
+}
+.savebtn button {
+  width: fit-content;
+  margin-right: 20px;
+  padding: 2px 10px;
+}
+@media screen and (200px <= width <= 450px) {
+  .profileInfoContainer {
+    grid-template-areas:
+      "info"
+      "img"
+      "con";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    border-radius: 8px;
+    border: 1px solid rgb(233, 230, 230);
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+    width: 380px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .profileImg {
+    width: 370px;
+    height: 470px;
+    padding: 5px;
+    box-shadow: none;
+    margin-left: 22px;
+  }
+  .profileImg img {
+    width: 357px;
+    height: 390px;
+    border-radius: 18px;
+    margin-left: -5px;
+  }
+
+  .editProfile > button {
+    top: -17px;
+    left: 5px;
+    width: 290px;
+    height: 35px;
+    font-size: 1.3em;
+  }
+
+  .profileImg > form > label {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+  }
+
+  .profileImg > form > label > img {
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
+    margin-left: -5px;
+  }
+  .profileInfo {
+    width: 380px;
+    margin-left: 28px;
+    box-shadow: none;
+  }
+  .contacts {
+    margin-bottom: 5px;
+  }
+
+  .subscribe > button {
+    width: 47%;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .savebtn button {
+    height: 25px;
+    margin: 15px 20px;
+  }
+}

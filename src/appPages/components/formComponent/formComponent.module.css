@@ -1,0 +1,61 @@
+.errorBlock {
+  display: inline-flex;
+  grid-area: err;
+  justify-content: center;
+  color: rgb(211, 4, 4);
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 0 20px;
+  width: fit-content;
+  margin-left: 10px;
+}
+.activeField,
+.formItem {
+  display: grid;
+  grid-template-areas: " lab inp err";
+  grid-template-columns: 0.7fr 1fr auto;
+  margin-bottom: 8px;
+}
+.activeField {
+  border: 2px double rgba(141, 171, 177, 0.37);
+  background: rgb(241, 241, 241);
+  padding: 4px;
+  height: 32px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.label {
+  grid-area: lab;
+  text-transform: capitalize;
+}
+.input {
+  grid-area: inp;
+}
+textarea {
+  height: 100%;
+}
+@media screen and (200px <= width <= 450px) {
+  .activeField,
+  .formItem {
+    display: grid;
+    grid-template-rows: 20px 30px;
+    grid-template-areas:
+      "lab err"
+      "inp inp";
+    grid-template-columns: 158px 237px;
+  }
+  .label {
+    padding-left: 20px;
+  }
+
+  .activeField {
+    height: 60px;
+    padding: 0px;
+    width: 385px;
+    margin-left: 5px;
+  }
+  .input {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

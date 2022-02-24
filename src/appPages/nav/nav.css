@@ -1,0 +1,17 @@
+div nav {
+  position: sticky;
+}
+.listIcon {
+  display: none;
+}
+
+@media screen and (200px <= width <= 450px) {
+  .listIcon {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 88%;
+    width: 40px;
+    height: 40px;
+  }
+}

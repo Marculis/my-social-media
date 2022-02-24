@@ -1,0 +1,76 @@
+.dialogsContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 20px;
+}
+.dialogsBlock {
+  box-shadow: 5px 5px 5px rgb(199, 199, 199);
+  background: rgba(233, 233, 233, 0.274);
+  border-radius: 7px;
+  padding: 10px;
+}
+.dialogItem,
+.dialogItemNew {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 80px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: white;
+  transition: 0.3s;
+}
+.dialogItem > div > h6,
+.dialogItemNew > div > h6 {
+  margin: 10px 0 0 0;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+.dialogItem > div > img,
+.dialogItemNew > div > img {
+  margin: 5px 0 0 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.dialogItem {
+  border: 2px solid rgb(203, 219, 224);
+}
+.dialogItemNew {
+  border: 2px solid rgb(255, 221, 108);
+}
+.chat {
+  width: 100%;
+}
+.dialogItem:hover {
+  border: 2px solid rgb(77, 77, 77);
+}
+.dialogItemNew:hover {
+  border: 2px solid rgb(255, 191, 108);
+}
+.activity {
+  font-size: 0.8em;
+  color: rgb(42, 126, 165);
+  width: 200px;
+}
+.openChat {
+  display: none;
+}
+@media screen and (200px <= width <= 450px) {
+  .dialogsContainer {
+    grid-template-columns: 390px;
+    padding: 0;
+    margin-left: 5px;
+  }
+  .dialogsBlock {
+    border: 1px solid rgb(233, 230, 230);
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+  }
+  .chat {
+    display: none;
+  }
+  .openChat {
+    display: block;
+    margin-top: 5px;
+  }
+}

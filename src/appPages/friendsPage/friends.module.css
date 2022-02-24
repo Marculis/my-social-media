@@ -1,0 +1,97 @@
+.allUsers {
+  display: grid;
+  grid-template-areas: "u u";
+  grid-template-columns: 1fr 1fr;
+}
+.userItem {
+  display: grid;
+  grid-template-areas: "i i";
+  grid-template-columns: 1fr 1.4fr;
+  background: rgba(233, 233, 233, 0.274);
+  box-shadow: 5px 5px 5px rgb(199, 199, 199);
+  border-radius: 7px;
+  margin: 20px;
+  width: 90%;
+  height: 230px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.userItem:hover {
+  box-shadow: 2px 2px 3px rgb(199, 199, 199);
+}
+
+.avaPhoto {
+  width: 180px;
+  height: 210px;
+  transition: 0.7s;
+  border-radius: 8px;
+}
+.avaPhoto:hover {
+  position: relative;
+  width: 200px;
+  height: 215px;
+  border-radius: 6px;
+}
+.userInfo > span {
+  display: block;
+  text-align: center;
+}
+.userInfo > h4 {
+  text-align: center;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.userInfo span button {
+  margin: 5px;
+}
+.findBlock {
+  margin-top: 15px;
+  position: relative;
+  left: 20px;
+}
+
+.usersToggle {
+  width: 15%;
+  height: 20px;
+}
+
+.searchInput {
+  margin-left: 20px;
+  width: 28%;
+  height: 16px;
+}
+@media screen and (200px <= width <= 450px) {
+  .allUsers {
+    grid-template-areas: "u";
+    grid-template-columns: 410px;
+    margin-bottom: 10px;
+  }
+  .userItem {
+    margin: 5px 0 0 0;
+    padding: 5px;
+    width: 395px;
+    height: fit-content;
+    border: 1px solid rgb(233, 230, 230);
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);
+  }
+  .avaPhoto {
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+  }
+  .userInfo > h4 {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+
+  .usersToggle {
+    width: 150px;
+    height: 25px;
+  }
+  .searchInput {
+    width: 180px;
+    height: 25px;
+  }
+}

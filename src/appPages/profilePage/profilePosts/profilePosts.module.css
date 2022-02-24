@@ -1,0 +1,96 @@
+.postsBlock {
+  box-shadow: 5px 5px 5px rgb(199, 199, 199);
+  border-radius: 4px;
+  background: rgba(233, 233, 233, 0.274);
+
+  padding: 10px;
+}
+.postTitle {
+  height: 20px;
+}
+.postText {
+  height: 80px;
+}
+input,
+textarea {
+  width: 97%;
+  border: 1px solid rgb(124, 157, 167);
+  border-radius: 5px;
+  background-color: rgba(235, 231, 231, 0.301);
+  resize: initial;
+}
+textarea {
+  height: 100%;
+}
+input:focus,
+textarea:focus {
+  outline: 2px solid rgb(255, 221, 108);
+  background-color: white;
+}
+button {
+  background-color: rgb(124, 157, 167);
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+  cursor: pointer;
+  width: 100px;
+  font-weight: 500;
+  color: white;
+  transition: 0.2s;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 2px rgb(156, 156, 156);
+}
+button:hover {
+  background-color: rgb(255, 221, 108);
+  color: rgb(91, 118, 126);
+  box-shadow: none;
+}
+
+.postItem {
+  background-color: rgba(170, 169, 169, 0.151);
+  width: 100%;
+  height: auto;
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.postItem > h5 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(124, 157, 167);
+  height: 20px;
+  margin: 0;
+  background-color: white;
+  border-radius: 5px;
+}
+.postItem > .postText {
+  height: 100%;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 0.8em;
+  color: rgb(34, 69, 109);
+}
+.likes {
+  position: relative;
+  left: 90%;
+  cursor: pointer;
+  background-color: white;
+  min-width: 30px;
+  width: max-content;
+  height: 12px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-size: 10px;
+}
+.likes img {
+  width: 10px;
+  height: 10px;
+}
+@media screen and (200px <= width <= 450px) {
+  .postsBlock {
+    box-shadow: none;
+  }
+}
